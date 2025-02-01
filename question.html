@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domanda {{ q_number }}</title>
+</head>
+<body>
+    <h1>Domanda {{ q_number }}</h1>
+    <p>{{ question['Domanda'] }}</p>
+    <form method="post">
+        <input type="radio" name="answer" value="A" required> {{ question['Opzione_A'] }}<br>
+        <input type="radio" name="answer" value="B"> {{ question['Opzione_B'] }}<br>
+        <input type="radio" name="answer" value="C"> {{ question['Opzione_C'] }}<br>
+        <button type="submit">Prossima</button>
+    </form>
+</body>
+</html>
